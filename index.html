@@ -3,212 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AI-powered automation services: Landing pages, bots, content writing, and data solutions. Fast delivery, professional quality.">
-    <title>FaleSystems | AI Automation Services</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #0a0a0a;
-            color: white;
-        }
-        
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,107,0,0.1) 0%, transparent 70%);
-            animation: pulse 15s ease-in-out infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); opacity: 0.5; }
-            50% { transform: scale(1.2); opacity: 0.8; }
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .hero-content {
-            text-align: center;
-        }
-        
-        .logo {
-            font-size: 4rem;
-            margin-bottom: 20px;
-            animation: fadeIn 1s ease;
-        }
-        
-        h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-            background: linear-gradient(135deg, #ff6b00, #ff8c00);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: fadeInUp 1s ease;
-        }
-        
-        .tagline {
-            font-size: 1.5rem;
-            color: #aaa;
-            margin-bottom: 50px;
-            animation: fadeInUp 1s ease 0.2s backwards;
-        }
-        
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 60px;
-        }
-        
-        .service-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 107, 0, 0.3);
-            padding: 40px 30px;
-            border-radius: 15px;
-            text-align: center;
-            transition: all 0.3s ease;
-            animation: fadeInUp 1s ease backwards;
-        }
-        
-        .service-card:nth-child(1) { animation-delay: 0.3s; }
-        .service-card:nth-child(2) { animation-delay: 0.4s; }
-        .service-card:nth-child(3) { animation-delay: 0.5s; }
-        .service-card:nth-child(4) { animation-delay: 0.6s; }
-        
-        .service-card:hover {
-            transform: translateY(-10px);
-            border-color: #ff6b00;
-            box-shadow: 0 10px 40px rgba(255, 107, 0, 0.3);
-        }
-        
-        .service-icon {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-        
-        .service-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            color: #ff8c00;
-        }
-        
-        .service-card p {
-            color: #bbb;
-            line-height: 1.8;
-        }
-        
-        .cta {
-            margin-top: 60px;
-            animation: fadeInUp 1s ease 0.7s backwards;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            padding: 18px 50px;
-            background: linear-gradient(135deg, #ff6b00, #ff8c00);
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(255, 107, 0, 0.4);
-        }
-        
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(255, 107, 0, 0.6);
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
+    <title>FaleSystems | AI-Powered Automation & Development</title>
+    <meta name="description" content="Professional landing pages, Discord/Telegram bots, SEO content, and web scraping automation. Zero bullshit. Pure results.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-orange': '#FF6B35',
+                        'brand-dark': '#1a1a2e',
+                        'brand-darker': '#0f0f1e',
+                    }
+                }
             }
         }
-        
-        @media (max-width: 768px) {
-            h1 { font-size: 2.5rem; }
-            .tagline { font-size: 1.2rem; }
-            .services-grid { grid-template-columns: 1fr; }
-        }
-    </style>
+    </script>
 </head>
-<body>
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="logo">🔥</div>
-                <h1>FaleSystems</h1>
-                <p class="tagline">AI-Powered Automation. Zero Bullshit. Pure Results.</p>
-                
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">🌐</div>
-                        <h3>Landing Pages</h3>
-                        <p>Professional websites that convert. Modern design, SEO-ready, deployed in hours.</p>
-                    </div>
-                    
-                    <div class="service-card">
-                        <div class="service-icon">🤖</div>
-                        <h3>Bot Development</h3>
-                        <p>Custom Discord/Telegram bots. Automation, moderation, engagement — whatever you need.</p>
-                    </div>
-                    
-                    <div class="service-card">
-                        <div class="service-icon">✍️</div>
-                        <h3>Content Writing</h3>
-                        <p>SEO-optimized blog posts, social media content, product descriptions. Fast turnaround.</p>
-                    </div>
-                    
-                    <div class="service-card">
-                        <div class="service-icon">📊</div>
-                        <h3>Data Solutions</h3>
-                        <p>Web scraping, price monitoring, market intelligence. Automated data pipelines.</p>
-                    </div>
+<body class="bg-gradient-to-br from-brand-darker via-brand-dark to-brand-darker text-gray-100 font-sans antialiased">
+    
+    <!-- Hero Section -->
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="container mx-auto px-6 py-6">
+            <nav class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="text-5xl">🔥</div>
+                    <span class="text-2xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">FaleSystems</span>
                 </div>
+                <a href="#services" class="hidden md:block px-6 py-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg font-semibold hover:shadow-lg hover:shadow-orange-500/50 transition-all duration-300">
+                    View Services
+                </a>
+            </nav>
+        </header>
+
+        <!-- Hero Content -->
+        <div class="flex-1 container mx-auto px-6 flex flex-col justify-center items-center text-center">
+            <div class="max-w-4xl">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    AI-Powered Automation.<br>
+                    <span class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Zero Bullshit.</span><br>
+                    Pure Results.
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl mx-auto">
+                    Professional websites that convert. Bots that automate. Content that ranks. Scrapers that deliver.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#services" class="px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 transform hover:scale-105">
+                        Explore Services
+                    </a>
+                    <a href="#contact" class="px-8 py-4 border-2 border-orange-500 rounded-lg font-bold text-lg hover:bg-orange-500/10 transition-all duration-300">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="pb-8 flex justify-center">
+            <div class="animate-bounce text-orange-500 text-3xl">↓</div>
+        </div>
+    </div>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-20 bg-brand-dark/50 backdrop-blur-sm">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">
+                What I Build
+            </h2>
+            <p class="text-center text-gray-400 text-lg mb-16 max-w-2xl mx-auto">
+                Specialized services designed to get results fast. Modern tech. Proven methods.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 
-                <div class="cta">
-                    <a href="mailto:contact@falesystems.com" class="cta-button">Get Started</a>
+                <!-- Landing Pages -->
+                <div class="group bg-gradient-to-br from-brand-dark to-brand-darker p-8 rounded-2xl border border-orange-500/20 hover:border-orange-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/20">
+                    <div class="text-5xl mb-4">🌐</div>
+                    <h3 class="text-2xl font-bold mb-3 group-hover:text-orange-500 transition-colors">Landing Pages</h3>
+                    <p class="text-gray-400 mb-6">Professional websites that convert. Modern design, SEO-ready, deployed in hours.</p>
+                    <div class="text-3xl font-bold text-orange-500 mb-4">$99+</div>
+                    <a href="services/landing-page-builder.html" class="inline-block px-6 py-2 border border-orange-500 rounded-lg hover:bg-orange-500/10 transition-all duration-300">
+                        Learn More →
+                    </a>
+                </div>
+
+                <!-- Bot Development -->
+                <div class="group bg-gradient-to-br from-brand-dark to-brand-darker p-8 rounded-2xl border border-orange-500/20 hover:border-orange-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/20">
+                    <div class="text-5xl mb-4">🤖</div>
+                    <h3 class="text-2xl font-bold mb-3 group-hover:text-orange-500 transition-colors">Discord/Telegram Bots</h3>
+                    <p class="text-gray-400 mb-6">Custom automation bots for moderation, analytics, engagement, and more.</p>
+                    <div class="text-3xl font-bold text-orange-500 mb-4">$149+</div>
+                    <a href="services/bot-development.html" class="inline-block px-6 py-2 border border-orange-500 rounded-lg hover:bg-orange-500/10 transition-all duration-300">
+                        Learn More →
+                    </a>
+                </div>
+
+                <!-- SEO Content -->
+                <div class="group bg-gradient-to-br from-brand-dark to-brand-darker p-8 rounded-2xl border border-orange-500/20 hover:border-orange-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/20">
+                    <div class="text-5xl mb-4">✍️</div>
+                    <h3 class="text-2xl font-bold mb-3 group-hover:text-orange-500 transition-colors">SEO Content</h3>
+                    <p class="text-gray-400 mb-6">Blog posts and articles that rank. Technical, well-researched, conversion-focused.</p>
+                    <div class="text-3xl font-bold text-orange-500 mb-4">$49+</div>
+                    <a href="services/seo-writing.html" class="inline-block px-6 py-2 border border-orange-500 rounded-lg hover:bg-orange-500/10 transition-all duration-300">
+                        Learn More →
+                    </a>
+                </div>
+
+                <!-- Web Scraping -->
+                <div class="group bg-gradient-to-br from-brand-dark to-brand-darker p-8 rounded-2xl border border-orange-500/20 hover:border-orange-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/20">
+                    <div class="text-5xl mb-4">🕷️</div>
+                    <h3 class="text-2xl font-bold mb-3 group-hover:text-orange-500 transition-colors">Web Scraping</h3>
+                    <p class="text-gray-400 mb-6">Automated data extraction from any website. Clean, structured, delivered fast.</p>
+                    <div class="text-3xl font-bold text-orange-500 mb-4">$99+</div>
+                    <a href="services/web-scraping.html" class="inline-block px-6 py-2 border border-orange-500 rounded-lg hover:bg-orange-500/10 transition-all duration-300">
+                        Learn More →
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-12">Why FaleSystems?</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div>
+                        <div class="text-3xl mb-4">⚡</div>
+                        <h3 class="text-xl font-bold mb-2">Fast Delivery</h3>
+                        <p class="text-gray-400">Most projects delivered within 24-48 hours. No endless back-and-forth.</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl mb-4">💎</div>
+                        <h3 class="text-xl font-bold mb-2">Quality Code</h3>
+                        <p class="text-gray-400">Modern tech stack. Clean, maintainable, production-ready code.</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl mb-4">🎯</div>
+                        <h3 class="text-xl font-bold mb-2">Results-Focused</h3>
+                        <p class="text-gray-400">Built to convert, rank, and perform. Not just to look pretty.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Free Resources -->
+    <section class="py-20 bg-brand-dark/50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-4">Free Resources</h2>
+                <p class="text-gray-400 mb-12">Quality templates and guides. No signup required.</p>
+                
+                <div class="bg-gradient-to-br from-brand-dark to-brand-darker p-8 rounded-2xl border border-orange-500/20">
+                    <h3 class="text-2xl font-bold mb-4">🎁 Free Landing Page Template</h3>
+                    <p class="text-gray-400 mb-6">Modern, responsive landing page template. Vanilla CSS, easy to customize, conversion-optimized.</p>
+                    <a href="free-templates/" class="inline-block px-8 py-3 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg font-bold hover:shadow-lg hover:shadow-orange-500/50 transition-all duration-300">
+                        Download Free Template
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-4">Let's Build Something</h2>
+                <p class="text-gray-400 text-lg mb-8">Have a project? Need automation? Let's talk.</p>
+                
+                <div class="space-y-4">
+                    <a href="mailto:falesystems@proton.me" class="block px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 transform hover:scale-105">
+                        📧 falesystems@proton.me
+                    </a>
+                    
+                    <div class="flex justify-center gap-6 pt-4">
+                        <a href="https://github.com/falesystems-lab" target="_blank" class="text-gray-400 hover:text-orange-500 transition-colors text-2xl">
+                            GitHub
+                        </a>
+                        <a href="https://twitter.com/falesystems" target="_blank" class="text-gray-400 hover:text-orange-500 transition-colors text-2xl">
+                            Twitter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2026 FaleSystems. Built with 🔥 and AI.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>
