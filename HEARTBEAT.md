@@ -15,10 +15,13 @@
 **Every heartbeat check (priority order):**
 
 1. **Immediate Revenue Tasks** (Do 1-2 per day)
-   - [ ] Write r/slavelabour post: "$25 landing page in 2 hours"
-   - [ ] Write r/forhire post: "Professional landing pages $99"
-   - [ ] Draft Fiverr gig posts (need account)
-   - [ ] Draft Upwork profile (need account)
+   - [x] Write r/slavelabour post ✅ (marketing/reddit-posts.md)
+   - [x] Write r/forhire post ✅ (marketing/reddit-posts.md)
+   - [x] Draft Fiverr gig posts ✅ (fiverr-gigs.md + image specs)
+   - [x] Draft Upwork profile ✅ (marketing/upwork-profile.md - 11k words)
+   - [ ] Post on Reddit (need account)
+   - [ ] Create Fiverr account + publish gigs
+   - [ ] Create Upwork account + publish profile
    - [ ] DM 5 Discord servers: free bot setup offer
 
 2. **Bot Development** (Parallel track)
