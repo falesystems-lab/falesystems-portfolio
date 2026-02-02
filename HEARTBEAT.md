@@ -34,7 +34,7 @@
    - [x] Blog post: "Landing Page Mistakes" ✅ (11.7k words, MD + HTML)
    - [x] Twitter threads: 4 complete threads ✅ (marketing/twitter-threads.md)
    - [ ] Post Twitter threads (need account)
-   - [ ] Blog post: "Discord Bot Ideas"
+   - [x] Blog post: "Discord Bot Ideas" ✅ (19.5k words - 50+ bot ideas)
    - [ ] YouTube Short idea: "SEO tips"
 
 4. **Email List Setup**
