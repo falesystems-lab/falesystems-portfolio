@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FaleSystems Logo Generator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background: #0f0f1e;
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+        }
+        .logo-container {
+            margin-bottom: 60px;
+            padding: 40px;
+            background: #1a1a2e;
+            border-radius: 16px;
+        }
+        h2 {
+            color: #FF6B35;
+            margin-bottom: 20px;
+        }
+        .logo {
+            padding: 40px;
+            display: inline-block;
+            border-radius: 12px;
+            margin: 10px;
+        }
+        .logo-dark {
+            background: #1a1a2e;
+        }
+        .logo-light {
+            background: #f8f9fa;
+        }
+        .logo-gradient {
+            background: linear-gradient(135deg, #FF6B35 0%, #FF3D00 100%);
+        }
+        .logo-text {
+            font-size: 48px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .logo-text.white {
+            color: #ffffff;
+        }
+        .logo-text.dark {
+            color: #1a1a2e;
+        }
+        .logo-text.gradient {
+            background: linear-gradient(135deg, #FF6B35 0%, #FF3D00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .icon-only {
+            font-size: 72px;
+        }
+        .compact {
+            font-size: 64px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <h2>Primary Logo (Dark Background)</h2>
+        <div class="logo logo-dark">
+            <div class="logo-text white">
+                <span>🔥</span>
+                <span>FaleSystems</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="logo-container">
+        <h2>Primary Logo (Light Background)</h2>
+        <div class="logo logo-light">
+            <div class="logo-text dark">
+                <span>🔥</span>
+                <span>FaleSystems</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="logo-container">
+        <h2>Gradient Logo</h2>
+        <div class="logo logo-dark">
+            <div class="logo-text gradient">
+                <span style="-webkit-text-fill-color: initial; background: none;">🔥</span>
+                <span>FaleSystems</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="logo-container">
+        <h2>Compact Logo (🔥 FS)</h2>
+        <div class="logo logo-dark">
+            <div class="compact white">
+                <span>🔥</span>
+                <span>FS</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="logo-container">
+        <h2>Icon Only</h2>
+        <div class="logo logo-dark">
+            <div class="icon-only">🔥</div>
+        </div>
+    </div>
+
+    <div class="logo-container">
+        <h2>Social Media Profile Picture (Square)</h2>
+        <div style="width: 200px; height: 200px; background: #1a1a2e; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 96px;">
+            🔥
+        </div>
+    </div>
+
+    <div class="logo-container">
+        <h2>Twitter Header</h2>
+        <div style="width: 1500px; max-width: 100%; height: 500px; background: linear-gradient(135deg, #1a1a2e 0%, #FF6B35 100%); display: flex; align-items: center; justify-content: center; border-radius: 12px;">
+            <div style="font-size: 72px; font-weight: 700; color: white; display: flex; align-items: center; gap: 24px;">
+                <span>🔥</span>
+                <span>FaleSystems</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Instructions for screenshots:
+        // 1. Open this file in browser
+        // 2. Take screenshots of each section
+        // 3. Save as PNG with transparent backgrounds where needed
+        // 4. Use for profiles across platforms
+        console.log('Logo assets ready for screenshot');
+    </script>
+</body>
+</html>
