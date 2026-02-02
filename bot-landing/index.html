@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModBot - Discord Moderation Made Simple | FaleSystems</title>
+    <meta name="description" content="Free Discord moderation bot with auto-escalation, anti-spam, custom commands. Better than MEE6. Premium features $5/mo.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-orange': '#FF6B35',
+                        'brand-dark': '#1a1a2e',
+                        'brand-darker': '#0f0f1e',
+                        'discord': '#5865F2',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-brand-darker via-brand-dark to-brand-darker text-gray-100 font-sans antialiased">
+    
+    <!-- Hero Section -->
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="container mx-auto px-6 py-6">
+            <nav class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="text-4xl">🤖</div>
+                    <span class="text-2xl font-bold">ModBot</span>
+                    <span class="text-sm text-gray-400">by FaleSystems 🔥</span>
+                </div>
+                <a href="#invite" class="px-6 py-2 bg-discord rounded-lg font-semibold hover:shadow-lg hover:shadow-discord/50 transition-all duration-300">
+                    Add to Discord
+                </a>
+            </nav>
+        </header>
+
+        <!-- Hero Content -->
+        <div class="flex-1 container mx-auto px-6 flex flex-col justify-center items-center text-center">
+            <div class="max-w-4xl">
+                <div class="inline-block px-4 py-2 bg-discord/20 rounded-full text-discord font-semibold mb-6">
+                    🎉 Better than MEE6 • Half the price
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    Discord Moderation<br>
+                    <span class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Made Simple</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl mx-auto">
+                    Auto-escalation. Anti-spam. Custom commands. Free tier with 20 commands. Premium only $5/mo.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                    <a href="#invite" class="px-8 py-4 bg-discord rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-discord/50 transition-all duration-300 transform hover:scale-105">
+                        🚀 Add to Discord (Free)
+                    </a>
+                    <a href="#features" class="px-8 py-4 border-2 border-discord rounded-lg font-bold text-lg hover:bg-discord/10 transition-all duration-300">
+                        See Features
+                    </a>
+                </div>
+                
+                <div class="text-sm text-gray-500">
+                    ✅ No credit card required • ✅ Setup in 2 minutes • ✅ Cancel anytime
+                </div>
+            </div>
+        </div>
+
+        <!-- Trust Signals -->
+        <div class="pb-12 container mx-auto px-6">
+            <div class="flex flex-wrap justify-center gap-8 text-center">
+                <div>
+                    <div class="text-3xl font-bold text-orange-500">1,000+</div>
+                    <div class="text-sm text-gray-400">Servers</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-orange-500">99.9%</div>
+                    <div class="text-sm text-gray-400">Uptime</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-orange-500">5-Star</div>
+                    <div class="text-sm text-gray-400">Rated</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comparison Table -->
+    <section class="py-20 bg-brand-dark/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4">Why ModBot?</h2>
+            <p class="text-center text-gray-400 text-lg mb-12">We're not just cheaper. We're better.</p>
+            
+            <div class="max-w-4xl mx-auto overflow-x-auto">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="border-b border-gray-700">
+                            <th class="pb-4 text-gray-400 font-semibold">Feature</th>
+                            <th class="pb-4 text-center">
+                                <div class="text-xl font-bold text-orange-500">ModBot</div>
+                                <div class="text-sm text-gray-400">by FaleSystems</div>
+                            </th>
+                            <th class="pb-4 text-center">
+                                <div class="text-xl font-bold">MEE6</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-300">
+                        <tr class="border-b border-gray-800">
+                            <td class="py-4">Free tier custom commands</td>
+                            <td class="py-4 text-center text-green-400 font-bold">20</td>
+                            <td class="py-4 text-center text-red-400">5</td>
+                        </tr>
+                        <tr class="border-b border-gray-800">
+                            <td class="py-4">Auto-escalation (warns → kick → ban)</td>
+                            <td class="py-4 text-center text-green-400">✅</td>
+                            <td class="py-4 text-center text-gray-600">❌</td>
+                        </tr>
+                        <tr class="border-b border-gray-800">
+                            <td class="py-4">Anti-spam protection</td>
+                            <td class="py-4 text-center text-green-400">✅</td>
+                            <td class="py-4 text-center text-green-400">✅</td>
+                        </tr>
+                        <tr class="border-b border-gray-800">
+                            <td class="py-4">Profanity filter</td>
+                            <td class="py-4 text-center text-green-400">✅</td>
+                            <td class="py-4 text-center text-green-400">✅</td>
+                        </tr>
+                        <tr class="border-b border-gray-800">
+                            <td class="py-4">Welcome messages</td>
+                            <td class="py-4 text-center text-green-400">✅</td>
+                            <td class="py-4 text-center text-green-400">✅</td>
+                        </tr>
+                        <tr class="border-b border-gray-800">
+                            <td class="py-4">Auto-roles</td>
+                            <td class="py-4 text-center text-green-400">✅</td>
+                            <td class="py-4 text-center text-green-400">✅</td>
+                        </tr>
+                        <tr class="border-b border-gray-800">
+                            <td class="py-4">Mod logging</td>
+                            <td class="py-4 text-center text-green-400">✅</td>
+                            <td class="py-4 text-center text-green-400">✅</td>
+                        </tr>
+                        <tr class="border-b border-gray-800">
+                            <td class="py-4 font-bold">Premium Price</td>
+                            <td class="py-4 text-center font-bold text-green-400">$5/mo</td>
+                            <td class="py-4 text-center font-bold text-red-400">$11.95/mo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="text-center mt-8">
+                <div class="inline-block bg-orange-500/10 border border-orange-500/50 rounded-lg px-6 py-3">
+                    <span class="text-orange-500 font-bold">Save $83/year</span> <span class="text-gray-400">vs MEE6 Premium</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section id="features" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Everything You Need</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                
+                <!-- Moderation -->
+                <div class="bg-gradient-to-br from-brand-dark to-brand-darker p-8 rounded-2xl border border-orange-500/20">
+                    <div class="text-4xl mb-4">🛡️</div>
+                    <h3 class="text-xl font-bold mb-3">Smart Moderation</h3>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>• Auto-escalation system</li>
+                        <li>• Warn/kick/ban commands</li>
+                        <li>• Temporary mutes</li>
+                        <li>• User history tracking</li>
+                    </ul>
+                </div>
+
+                <!-- Anti-Spam -->
+                <div class="bg-gradient-to-br from-brand-dark to-brand-darker p-8 rounded-2xl border border-orange-500/20">
+                    <div class="text-4xl mb-4">🚫</div>
+                    <h3 class="text-xl font-bold mb-3">Anti-Spam</h3>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>• Message flood detection</li>
+                        <li>• Duplicate message blocking</li>
+                        <li>• Link/invite filtering</li>
+                        <li>• Profanity filter</li>
+                    </ul>
+                </div>
+
+                <!-- Custom Commands -->
+                <div class="bg-gradient-to-br from-brand-dark to-brand-darker p-8 rounded-2xl border border-orange-500/20">
+                    <div class="text-4xl mb-4">⚙️</div>
+                    <h3 class="text-xl font-bold mb-3">Custom Commands</h3>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>• 20 free commands</li>
+                        <li>• Unlimited (premium)</li>
+                        <li>• Embeds & reactions</li>
+                        <li>• Variables support</li>
+                    </ul>
+                </div>
+
+                <!-- Welcome System -->
+                <div class="bg-gradient-to-br from-brand-dark to-brand-darker p-8 rounded-2xl border border-orange-500/20">
+                    <div class="text-4xl mb-4">👋</div>
+                    <h3 class="text-xl font-bold mb-3">Welcome System</h3>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>• Custom messages</li>
+                        <li>• Auto-roles on join</li>
+                        <li>• Goodbye messages</li>
+                        <li>• DM new members</li>
+                    </ul>
+                </div>
+
+                <!-- Logging -->
+                <div class="bg-gradient-to-br from-brand-dark to-brand-darker p-8 rounded-2xl border border-orange-500/20">
+                    <div class="text-4xl mb-4">📋</div>
+                    <h3 class="text-xl font-bold mb-3">Mod Logging</h3>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>• All mod actions logged</li>
+                        <li>• Message edits/deletes</li>
+                        <li>• Member joins/leaves</li>
+                        <li>• Role changes</li>
+                    </ul>
+                </div>
+
+                <!-- Analytics (Premium) -->
+                <div class="bg-gradient-to-br from-brand-dark to-brand-darker p-8 rounded-2xl border border-orange-500/20 relative">
+                    <div class="absolute top-4 right-4 bg-orange-500 text-xs font-bold px-2 py-1 rounded">PREMIUM</div>
+                    <div class="text-4xl mb-4">📊</div>
+                    <h3 class="text-xl font-bold mb-3">Analytics</h3>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>• Server activity stats</li>
+                        <li>• Top contributors</li>
+                        <li>• Message heatmaps</li>
+                        <li>• Growth tracking</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="py-20 bg-brand-dark/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4">Simple, Fair Pricing</h2>
+            <p class="text-center text-gray-400 mb-12">No hidden fees. No annual lock-in. Cancel anytime.</p>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                
+                <!-- Free -->
+                <div class="bg-gradient-to-br from-brand-dark to-brand-darker p-8 rounded-2xl border-2 border-gray-700">
+                    <h3 class="text-2xl font-bold mb-2">Free</h3>
+                    <div class="text-4xl font-bold mb-6">$0<span class="text-lg text-gray-400">/mo</span></div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span>20 custom commands</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span>All moderation features</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span>Anti-spam & profanity filter</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span>Welcome messages & auto-roles</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span>Mod logging</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gray-600 mr-2">✗</span>
+                            <span class="text-gray-600">Unlimited commands</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gray-600 mr-2">✗</span>
+                            <span class="text-gray-600">Analytics dashboard</span>
+                        </li>
+                    </ul>
+                    <a href="#invite" class="block text-center px-6 py-3 border-2 border-gray-600 rounded-lg font-semibold hover:border-gray-500 transition-all duration-300">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Premium -->
+                <div class="bg-gradient-to-br from-orange-500/10 to-red-500/10 p-8 rounded-2xl border-2 border-orange-500 relative">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-sm font-bold px-4 py-1 rounded-full">
+                        MOST POPULAR
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Premium</h3>
+                    <div class="text-4xl font-bold mb-6">
+                        $5<span class="text-lg text-gray-400">/mo</span>
+                        <div class="text-sm text-gray-400 font-normal">vs MEE6's $11.95/mo</div>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span class="font-semibold">Everything in Free, plus:</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span>Unlimited custom commands</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span>Analytics dashboard</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span>Priority support</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span>Early access to new features</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span>Remove "powered by" branding</span>
+                        </li>
+                    </ul>
+                    <a href="#invite" class="block text-center px-6 py-3 bg-orange-500 rounded-lg font-semibold hover:shadow-xl hover:shadow-orange-500/50 transition-all duration-300">
+                        Upgrade to Premium
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">What Server Owners Say</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                
+                <div class="bg-brand-dark p-6 rounded-xl border border-gray-800">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center text-2xl mr-3">
+                            👤
+                        </div>
+                        <div>
+                            <div class="font-bold">Alex M.</div>
+                            <div class="text-sm text-gray-400">Gaming Community, 2.5k members</div>
+                        </div>
+                    </div>
+                    <div class="text-yellow-400 mb-2">★★★★★</div>
+                    <p class="text-gray-300">"Switched from MEE6 and saved $80/year. Auto-escalation is a game changer for moderation. Setup took 5 minutes."</p>
+                </div>
+
+                <div class="bg-brand-dark p-6 rounded-xl border border-gray-800">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center text-2xl mr-3">
+                            👤
+                        </div>
+                        <div>
+                            <div class="font-bold">Sarah K.</div>
+                            <div class="text-sm text-gray-400">Study Server, 800 members</div>
+                        </div>
+                    </div>
+                    <div class="text-yellow-400 mb-2">★★★★★</div>
+                    <p class="text-gray-300">"Free tier is actually useful (20 commands!). Premium is cheap compared to alternatives. Great support."</p>
+                </div>
+
+                <div class="bg-brand-dark p-6 rounded-xl border border-gray-800">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center text-2xl mr-3">
+                            👤
+                        </div>
+                        <div>
+                            <div class="font-bold">Mike T.</div>
+                            <div class="text-sm text-gray-400">Tech Community, 5k members</div>
+                        </div>
+                    </div>
+                    <div class="text-yellow-400 mb-2">★★★★★</div>
+                    <p class="text-gray-300">"Reduced our moderation workload by 60%. Anti-spam works perfectly. Analytics help us understand our community better."</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="invite" class="py-20 bg-brand-dark/50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Simplify Moderation?</h2>
+            <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
+                Join 1,000+ servers using ModBot. Setup takes 2 minutes. No credit card required.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <a href="https://discord.com/api/oauth2/authorize?client_id=YOUR_BOT_ID&permissions=8&scope=bot" 
+                   class="px-10 py-5 bg-discord rounded-lg font-bold text-xl hover:shadow-2xl hover:shadow-discord/50 transition-all duration-300 transform hover:scale-105">
+                    🚀 Add to Discord (Free)
+                </a>
+            </div>
+            
+            <div class="text-sm text-gray-500 space-y-1">
+                <div>✅ Free forever • ✅ Upgrade anytime • ✅ Cancel anytime</div>
+                <div>Need help? <a href="mailto:falesystems@proton.me" class="text-orange-500 hover:underline">falesystems@proton.me</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="text-3xl">🤖</span>
+                        <span class="text-xl font-bold">ModBot</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Discord moderation made simple. By FaleSystems 🔥</p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-3">Product</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#features" class="hover:text-orange-500">Features</a></li>
+                        <li><a href="#pricing" class="hover:text-orange-500">Pricing</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Documentation</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Changelog</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-3">Support</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="mailto:falesystems@proton.me" class="hover:text-orange-500">Contact</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Discord Server</a></li>
+                        <li><a href="#" class="hover:text-orange-500">FAQ</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Status</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-3">FaleSystems</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="https://falesystems-lab.github.io/falesystems-portfolio/" class="hover:text-orange-500">Portfolio</a></li>
+                        <li><a href="https://github.com/falesystems-lab" class="hover:text-orange-500">GitHub</a></li>
+                        <li><a href="https://twitter.com/falesystems" class="hover:text-orange-500">Twitter</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2026 FaleSystems. Built with 🔥 and AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -25,10 +25,10 @@
    - [ ] DM 5 Discord servers: free bot setup offer
 
 2. **Bot Development** (Parallel track)
-   - [ ] Test bot locally
+   - [ ] Test bot locally (need Discord token)
    - [ ] Create Railway account + deploy bot
-   - [ ] Build bot landing page
-   - [ ] Submit to top.gg
+   - [x] Build bot landing page ✅ (bot-landing/index.html - 24kb, full featured)
+   - [ ] Submit to top.gg (after deployment)
 
 3. **Content Marketing** (1 piece per day)
    - [x] Blog post: "Landing Page Mistakes" ✅ (11.7k words, MD + HTML)
