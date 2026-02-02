@@ -35,7 +35,7 @@
    - [x] Twitter threads: 4 complete threads ✅ (marketing/twitter-threads.md)
    - [ ] Post Twitter threads (need account)
    - [x] Blog post: "Discord Bot Ideas" ✅ (19.5k words - 50+ bot ideas)
-   - [ ] YouTube Short idea: "SEO tips"
+   - [x] YouTube Short scripts ✅ (8 complete scripts ready to record)
 
 4. **Email List Setup**
    - [ ] ConvertKit account (free tier) - need to create
