@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Custom Discord and Telegram bot development. Automation, moderation, engagement. Starting at $149.">
+    <title>Bot Development | FaleSystems</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+        }
+        
+        .features {
+            padding: 80px 20px;
+            background: white;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .feature {
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        .feature h3 {
+            margin-bottom: 10px;
+            color: #f5576c;
+        }
+        
+        .use-cases {
+            padding: 80px 20px;
+            background: #f8f9fa;
+        }
+        
+        .use-cases h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+        
+        .use-cases ul {
+            max-width: 600px;
+            margin: 0 auto;
+            list-style: none;
+        }
+        
+        .use-cases li {
+            padding: 15px 0;
+            padding-left: 30px;
+            position: relative;
+            font-size: 1.1rem;
+        }
+        
+        .use-cases li::before {
+            content: '🤖';
+            position: absolute;
+            left: 0;
+        }
+        
+        .pricing {
+            padding: 80px 20px;
+            background: white;
+            text-align: center;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+        
+        .price-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            border: 2px solid #e0e0e0;
+            transition: all 0.3s ease;
+        }
+        
+        .price-card:hover {
+            border-color: #f5576c;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(245, 87, 108, 0.2);
+        }
+        
+        .price-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #f5576c;
+            margin: 20px 0;
+        }
+        
+        .price-card ul {
+            list-style: none;
+            text-align: left;
+            margin: 30px 0;
+        }
+        
+        .price-card li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .price-card li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #f5576c;
+            font-weight: bold;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #f093fb, #f5576c);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(245, 87, 108, 0.4);
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .features-grid, .pricing-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1>🤖 Custom Bot Development</h1>
+            <p>Automate your Discord or Telegram community with intelligent bots</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2rem; margin-bottom: 20px;">What I Build</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>🛡️ Moderation</h3>
+                    <p>Auto-ban spam, filter profanity, raid protection, warning systems</p>
+                </div>
+                <div class="feature">
+                    <h3>⚙️ Automation</h3>
+                    <p>Scheduled posts, auto-roles, welcome messages, ticket systems</p>
+                </div>
+                <div class="feature">
+                    <h3>🎮 Engagement</h3>
+                    <p>Mini-games, polls, trivia, leveling systems, custom commands</p>
+                </div>
+                <div class="feature">
+                    <h3>📊 Analytics</h3>
+                    <p>User activity tracking, message stats, growth reports</p>
+                </div>
+                <div class="feature">
+                    <h3>🔗 Integrations</h3>
+                    <p>Connect to external APIs, webhooks, databases, payment systems</p>
+                </div>
+                <div class="feature">
+                    <h3>💬 AI Responses</h3>
+                    <p>Smart auto-replies, FAQ bots, conversational assistants</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="use-cases">
+        <div class="container">
+            <h2>Perfect For</h2>
+            <ul>
+                <li>Gaming communities needing moderation</li>
+                <li>NFT/Crypto projects managing Discord servers</li>
+                <li>Customer support automation (Telegram)</li>
+                <li>Community engagement and retention</li>
+                <li>Event coordination and announcements</li>
+                <li>Role management for large servers</li>
+                <li>Integration with your existing tools/APIs</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="container">
+            <h2 style="font-size: 2rem; margin-bottom: 20px;">Pricing Plans</h2>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Starter</h3>
+                    <div class="price">$149</div>
+                    <ul>
+                        <li>Basic moderation features</li>
+                        <li>5-10 custom commands</li>
+                        <li>Auto-roles & welcome</li>
+                        <li>7-day delivery</li>
+                        <li>30-day support</li>
+                    </ul>
+                    <a href="mailto:contact@falesystems.com?subject=Bot Order - Starter" class="cta-button">Get Started</a>
+                </div>
+                
+                <div class="price-card">
+                    <h3>Pro</h3>
+                    <div class="price">$299</div>
+                    <ul>
+                        <li>Everything in Starter</li>
+                        <li>Advanced moderation</li>
+                        <li>External API integration</li>
+                        <li>Database support</li>
+                        <li>Analytics dashboard</li>
+                        <li>10-day delivery</li>
+                        <li>60-day support</li>
+                    </ul>
+                    <a href="mailto:contact@falesystems.com?subject=Bot Order - Pro" class="cta-button">Get Started</a>
+                </div>
+                
+                <div class="price-card">
+                    <h3>Enterprise</h3>
+                    <div class="price">$499+</div>
+                    <ul>
+                        <li>Everything in Pro</li>
+                        <li>Complex automation</li>
+                        <li>Payment integration</li>
+                        <li>Multi-server support</li>
+                        <li>Premium hosting included</li>
+                        <li>Ongoing maintenance</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <a href="mailto:contact@falesystems.com?subject=Bot Order - Enterprise" class="cta-button">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

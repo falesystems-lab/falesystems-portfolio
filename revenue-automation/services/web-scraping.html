@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional web scraping and data extraction service. Get structured data from any website. Starting at $99.">
+    <title>Web Scraping & Data Extraction | FaleSystems</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+        }
+        
+        .features {
+            padding: 80px 20px;
+            background: white;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .feature {
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        .feature h3 {
+            margin-bottom: 10px;
+            color: #4facfe;
+        }
+        
+        .use-cases {
+            padding: 80px 20px;
+            background: #f8f9fa;
+        }
+        
+        .use-cases h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+        
+        .use-cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .use-case-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 4px solid #4facfe;
+        }
+        
+        .use-case-card h3 {
+            color: #4facfe;
+            margin-bottom: 10px;
+        }
+        
+        .pricing {
+            padding: 80px 20px;
+            background: white;
+            text-align: center;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+        
+        .price-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            border: 2px solid #e0e0e0;
+            transition: all 0.3s ease;
+        }
+        
+        .price-card:hover {
+            border-color: #4facfe;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(79, 172, 254, 0.2);
+        }
+        
+        .price-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #4facfe;
+            margin: 20px 0;
+        }
+        
+        .price-card ul {
+            list-style: none;
+            text-align: left;
+            margin: 30px 0;
+        }
+        
+        .price-card li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .price-card li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #4facfe;
+            font-weight: bold;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(79, 172, 254, 0.4);
+        }
+        
+        .disclaimer {
+            background: #fff9e6;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 40px auto;
+            max-width: 800px;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .disclaimer h3 {
+            color: #f57c00;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .features-grid, .pricing-grid, .use-cases-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1>📊 Web Scraping & Data Extraction</h1>
+            <p>Turn any website into structured, actionable data</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2rem; margin-bottom: 20px;">What I Scrape</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>🛒 E-commerce Data</h3>
+                    <p>Product prices, descriptions, reviews, availability, images</p>
+                </div>
+                <div class="feature">
+                    <h3>🏠 Real Estate</h3>
+                    <p>Property listings, prices, locations, agent contacts</p>
+                </div>
+                <div class="feature">
+                    <h3>💼 Job Listings</h3>
+                    <p>Positions, salaries, requirements, company info</p>
+                </div>
+                <div class="feature">
+                    <h3>📰 News & Articles</h3>
+                    <p>Headlines, content, authors, publication dates</p>
+                </div>
+                <div class="feature">
+                    <h3>📞 Contact Info</h3>
+                    <p>Business listings, emails, phone numbers, addresses</p>
+                </div>
+                <div class="feature">
+                    <h3>📈 Market Data</h3>
+                    <p>Stock prices, crypto rates, competitor intelligence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="use-cases">
+        <div class="container">
+            <h2>Perfect For</h2>
+            <div class="use-cases-grid">
+                <div class="use-case-card">
+                    <h3>🏪 Price Monitoring</h3>
+                    <p>Track competitor prices automatically. Get alerts when prices change. Stay competitive.</p>
+                </div>
+                <div class="use-case-card">
+                    <h3>📊 Market Research</h3>
+                    <p>Gather data on trends, competitors, consumer behavior. Make data-driven decisions.</p>
+                </div>
+                <div class="use-case-card">
+                    <h3>🎯 Lead Generation</h3>
+                    <p>Build targeted contact lists for outreach. Find decision-makers and opportunities.</p>
+                </div>
+                <div class="use-case-card">
+                    <h3>📦 Inventory Tracking</h3>
+                    <p>Monitor product availability across multiple sites. Never miss restocks.</p>
+                </div>
+                <div class="use-case-card">
+                    <h3>📰 Content Aggregation</h3>
+                    <p>Collect news, blog posts, or industry updates. Stay informed automatically.</p>
+                </div>
+                <div class="use-case-card">
+                    <h3>🔍 SEO Intelligence</h3>
+                    <p>Analyze competitor backlinks, keywords, content strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="container">
+            <h2 style="font-size: 2rem; margin-bottom: 20px;">Pricing Plans</h2>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>One-Time</h3>
+                    <div class="price">$99</div>
+                    <ul>
+                        <li>Up to 1,000 records</li>
+                        <li>Single website</li>
+                        <li>CSV/Excel delivery</li>
+                        <li>3-5 day delivery</li>
+                        <li>Basic data cleaning</li>
+                    </ul>
+                    <a href="mailto:contact@falesystems.com?subject=Scraping Order - One-Time" class="cta-button">Get Started</a>
+                </div>
+                
+                <div class="price-card">
+                    <h3>Advanced</h3>
+                    <div class="price">$199</div>
+                    <ul>
+                        <li>Up to 10,000 records</li>
+                        <li>Multiple websites</li>
+                        <li>JSON/Database export</li>
+                        <li>Complex pagination</li>
+                        <li>Advanced data cleaning</li>
+                        <li>JavaScript rendering</li>
+                        <li>5-7 day delivery</li>
+                    </ul>
+                    <a href="mailto:contact@falesystems.com?subject=Scraping Order - Advanced" class="cta-button">Get Started</a>
+                </div>
+                
+                <div class="price-card">
+                    <h3>Automated</h3>
+                    <div class="price">$399+</div>
+                    <ul>
+                        <li>Unlimited records</li>
+                        <li>Scheduled scraping</li>
+                        <li>Real-time updates</li>
+                        <li>API delivery</li>
+                        <li>Change detection alerts</li>
+                        <li>Cloud hosting included</li>
+                        <li>Ongoing maintenance</li>
+                    </ul>
+                    <a href="mailto:contact@falesystems.com?subject=Scraping Order - Automated" class="cta-button">Get Started</a>
+                </div>
+            </div>
+            
+            <div class="disclaimer">
+                <h3>⚖️ Legal & Ethical Scraping</h3>
+                <p>I only scrape <strong>publicly available data</strong> and respect <code>robots.txt</code> files. No login-protected content, no personal data harvesting. All work complies with data protection regulations.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
