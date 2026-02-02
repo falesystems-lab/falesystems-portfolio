@@ -28,7 +28,7 @@
    - [ ] Submit to top.gg
 
 3. **Content Marketing** (1 piece per day)
-   - [ ] Blog post: "Landing Page Mistakes"
+   - [x] Blog post: "Landing Page Mistakes" ✅ (11.7k words, MD + HTML)
    - [ ] Twitter thread: "What makes landing pages convert"
    - [ ] Blog post: "Discord Bot Ideas"
    - [ ] YouTube Short idea: "SEO tips"
