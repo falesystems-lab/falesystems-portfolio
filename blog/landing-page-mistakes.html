@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Landing Page Mistakes Killing Your Conversions | FaleSystems</title>
+    <meta name="description" content="I've built 100+ landing pages. These 5 mistakes kill conversions every time. Learn how to fix them and boost your conversion rate.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-orange': '#FF6B35',
+                        'brand-dark': '#1a1a2e',
+                        'brand-darker': '#0f0f1e',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-darker text-gray-100">
+    
+    <!-- Header -->
+    <header class="border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4">
+            <a href="../index.html" class="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+                <span class="text-4xl">🔥</span>
+                <span class="text-xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">FaleSystems</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Article -->
+    <article class="container mx-auto px-6 py-12 max-w-4xl">
+        
+        <!-- Meta -->
+        <div class="text-gray-400 text-sm mb-8">
+            <span>February 2, 2026</span>
+            <span class="mx-2">•</span>
+            <span>8 min read</span>
+            <span class="mx-2">•</span>
+            <span>by FaleSystems</span>
+        </div>
+
+        <!-- Title -->
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            5 Landing Page Mistakes That Are Killing Your Conversions
+            <span class="text-gray-400">(And How to Fix Them)</span>
+        </h1>
+
+        <!-- Intro -->
+        <div class="text-xl text-gray-300 mb-12 leading-relaxed">
+            <p class="mb-4">I've built over 100 landing pages for SaaS companies, agencies, and indie hackers. From simple one-pagers to complex multi-page funnels. And I keep seeing the same mistakes over and over again.</p>
+            <p>The worst part? These mistakes are <strong class="text-orange-500">completely avoidable</strong>.</p>
+        </div>
+
+        <!-- Content -->
+        <div class="prose prose-invert prose-lg max-w-none">
+            
+            <!-- Mistake 1 -->
+            <section class="mb-16">
+                <h2 class="text-3xl font-bold mb-4 text-orange-500">1. Slow Loading Speed (The Silent Killer)</h2>
+                
+                <h3 class="text-2xl font-semibold mb-3">The Problem</h3>
+                <p class="text-gray-300 mb-4">Your landing page takes 5 seconds to load. Maybe even 3 seconds.</p>
+                <p class="text-2xl font-bold text-red-500 mb-4">You just lost 40% of your visitors.</p>
+                <p class="text-gray-300 mb-6">According to Google, 53% of mobile users abandon sites that take longer than 3 seconds to load. Desktop users aren't much more patient.</p>
+                
+                <div class="bg-brand-dark p-6 rounded-lg border border-orange-500/20 mb-6">
+                    <p class="text-xl font-semibold">Every extra second of load time = 7% drop in conversions.</p>
+                </div>
+
+                <h3 class="text-2xl font-semibold mb-3">How to Fix It</h3>
+                
+                <div class="bg-brand-dark p-6 rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold mb-3 text-orange-500">Immediate wins:</h4>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <p class="font-semibold mb-2">1. Compress images</p>
+                            <ul class="list-disc list-inside text-gray-400 space-y-1 ml-4">
+                                <li>Use WebP format (30-50% smaller than JPEG)</li>
+                                <li>Tools: Squoosh.app, TinyPNG</li>
+                                <li>Never upload images larger than needed</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <p class="font-semibold mb-2">2. Minimize JavaScript</p>
+                            <ul class="list-disc list-inside text-gray-400 space-y-1 ml-4">
+                                <li>Remove unused scripts</li>
+                                <li>Lazy load non-critical JS</li>
+                                <li>Do you really need that chat widget on first load?</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <p class="font-semibold mb-2">3. Use a CDN</p>
+                            <ul class="list-disc list-inside text-gray-400 space-y-1 ml-4">
+                                <li>Cloudflare (free tier)</li>
+                                <li>Vercel/Netlify (free for static sites)</li>
+                                <li>Distribute assets globally = faster load times</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="text-gray-400 mb-2"><strong>Target:</strong> 90+ PageSpeed score, < 2 seconds load time</p>
+            </section>
+
+            <!-- Mistake 2 -->
+            <section class="mb-16">
+                <h2 class="text-3xl font-bold mb-4 text-orange-500">2. Unclear Value Proposition</h2>
+                
+                <h3 class="text-2xl font-semibold mb-3">The Problem</h3>
+                <p class="text-gray-300 mb-4">Visitor lands on your page. Reads the headline. Still has no idea what you do.</p>
+                
+                <div class="bg-red-900/20 border border-red-500/30 p-4 rounded-lg mb-4">
+                    <p class="font-semibold mb-2">❌ Headlines that tell me NOTHING:</p>
+                    <ul class="list-disc list-inside text-gray-400 space-y-1 ml-4">
+                        <li>"Welcome to [Company Name]"</li>
+                        <li>"Innovative Solutions for Modern Businesses"</li>
+                        <li>"Transform Your Digital Experience"</li>
+                        <li>"The Future of [Vague Industry]"</li>
+                    </ul>
+                </div>
+                
+                <p class="text-xl font-semibold text-orange-500 mb-6">If I can't understand what you do in 5 seconds, I'm gone.</p>
+
+                <h3 class="text-2xl font-semibold mb-3">How to Fix It</h3>
+                
+                <div class="bg-brand-dark p-6 rounded-lg mb-6">
+                    <h4 class="text-xl font-semibold mb-3">The 5-Second Test:</h4>
+                    <p class="text-gray-300 mb-4">Show your landing page to someone unfamiliar with your product. Give them 5 seconds. Then ask:</p>
+                    <ul class="list-disc list-inside text-gray-400 space-y-1 ml-4">
+                        <li>What does this company do?</li>
+                        <li>Who is it for?</li>
+                        <li>What problem does it solve?</li>
+                    </ul>
+                    <p class="text-gray-300 mt-4">If they can't answer, your value prop is broken.</p>
+                </div>
+
+                <div class="bg-green-900/20 border border-green-500/30 p-6 rounded-lg mb-6">
+                    <p class="font-semibold mb-3">Formula for killer headlines:</p>
+                    <code class="bg-brand-darker px-3 py-2 rounded block text-sm">[Do X] without [pain point] in [time frame]</code>
+                    <p class="text-gray-400 mt-4 mb-2"><strong>Examples:</strong></p>
+                    <ul class="list-disc list-inside text-gray-400 space-y-1 ml-4">
+                        <li>"Build landing pages without code in 30 minutes"</li>
+                        <li>"Ship faster with the best developer experience"</li>
+                        <li>"Simple, privacy-friendly analytics"</li>
+                    </ul>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-red-900/20 border border-red-500/30 p-4 rounded-lg">
+                        <p class="font-semibold mb-2">❌ Before:</p>
+                        <p class="text-gray-400 text-sm">Welcome to FaleSystems<br>Innovative automation solutions for modern businesses<br>[Learn More]</p>
+                    </div>
+                    <div class="bg-green-900/20 border border-green-500/30 p-4 rounded-lg">
+                        <p class="font-semibold mb-2">✅ After:</p>
+                        <p class="text-gray-400 text-sm">Landing Pages That Convert<br>Professional websites, deployed in 24 hours. Modern design, SEO-ready, zero bullshit.<br>[See Examples →]</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mistake 3 -->
+            <section class="mb-16">
+                <h2 class="text-3xl font-bold mb-4 text-orange-500">3. No Social Proof (The Trust Problem)</h2>
+                
+                <p class="text-gray-300 mb-6">You're a new brand. Nobody knows who you are. Why should they trust you with their money?</p>
+                
+                <p class="text-xl font-semibold text-red-500 mb-6">You're asking for a transaction without building trust first. That's like proposing on a first date.</p>
+
+                <div class="bg-brand-dark p-6 rounded-lg mb-6">
+                    <h4 class="text-xl font-semibold mb-3 text-orange-500">Types of social proof (use 2-3):</h4>
+                    <div class="space-y-3">
+                        <div>
+                            <p class="font-semibold">1. Testimonials</p>
+                            <p class="text-gray-400 text-sm">Specific results + photo + name (stock photos = fake)</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">2. Metrics/Numbers</p>
+                            <p class="text-gray-400 text-sm">"10,000+ users" / "$2M+ saved" / Even small numbers work</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">3. Logos</p>
+                            <p class="text-gray-400 text-sm">Client logos, "As featured in...", Certifications</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">4. Case Studies</p>
+                            <p class="text-gray-400 text-sm">Before/after results with specific metrics</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-blue-900/20 border border-blue-500/30 p-4 rounded-lg">
+                    <p class="font-semibold mb-2">💡 If you're brand new (no social proof yet):</p>
+                    <ul class="list-disc list-inside text-gray-400 space-y-1 ml-4 text-sm">
+                        <li>Offer free work to 3-5 people in exchange for testimonials</li>
+                        <li>Show your process (transparency = trust)</li>
+                        <li>Build in public (tweet progress, share learnings)</li>
+                        <li>Use personal credibility ("10 years experience")</li>
+                        <li>Money-back guarantee (removes risk)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Mistake 4 -->
+            <section class="mb-16">
+                <h2 class="text-3xl font-bold mb-4 text-orange-500">4. Too Many CTAs (The Paradox of Choice)</h2>
+                
+                <p class="text-gray-300 mb-4">Your landing page has: "Get Started", "Request Demo", "Download Free Guide", "Contact Sales", "Watch Video", "Read Blog"...</p>
+                
+                <p class="text-xl font-semibold text-red-500 mb-6">Result: Visitor doesn't click any of them.</p>
+
+                <div class="bg-brand-dark p-6 rounded-lg mb-6">
+                    <p class="text-2xl font-bold text-center mb-2">One landing page = One goal = One primary CTA</p>
+                </div>
+
+                <div class="bg-brand-dark p-6 rounded-lg mb-6">
+                    <h4 class="text-xl font-semibold mb-3 text-orange-500">The CTA Hierarchy:</h4>
+                    <div class="space-y-3">
+                        <div>
+                            <p class="font-semibold">1. Primary CTA (1 per page)</p>
+                            <p class="text-gray-400 text-sm">Bright color, large, repeated 2-3 times, same action everywhere</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">2. Secondary CTA (optional, 0-1)</p>
+                            <p class="text-gray-400 text-sm">Outline button, lower commitment, less prominent</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">3. Navigation Links (minimal)</p>
+                            <p class="text-gray-400 text-sm">Logo + 1-2 links max. Consider removing nav entirely.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mistake 5 -->
+            <section class="mb-16">
+                <h2 class="text-3xl font-bold mb-4 text-orange-500">5. Not Mobile-Optimized (The 60% Revenue Leak)</h2>
+                
+                <p class="text-2xl font-bold text-red-500 mb-4">60% of web traffic is mobile.</p>
+                <p class="text-gray-300 mb-6">If your site doesn't work on mobile, you're ignoring 60% of potential customers.</p>
+
+                <div class="bg-brand-dark p-6 rounded-lg mb-6">
+                    <h4 class="text-xl font-semibold mb-3 text-orange-500">Mobile-specific rules:</h4>
+                    <ul class="space-y-2">
+                        <li><strong>Minimum font size: 16px</strong> (anything smaller = unreadable)</li>
+                        <li><strong>Tap targets: 44x44px minimum</strong> (finger-sized)</li>
+                        <li><strong>Single column layout</strong> (no complex multi-column designs)</li>
+                        <li><strong>Simplify forms</strong> (fewer fields, large inputs, correct input types)</li>
+                        <li><strong>Test on real devices</strong> (not just Chrome DevTools)</li>
+                    </ul>
+                </div>
+
+                <div class="bg-blue-900/20 border border-blue-500/30 p-4 rounded-lg">
+                    <p class="font-semibold mb-2">💡 Pro tip: Design mobile-first</p>
+                    <p class="text-gray-400 text-sm">Start with mobile (320-375px), then scale up. Forces you to prioritize what's actually important.</p>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="bg-gradient-to-br from-brand-dark to-brand-darker p-8 rounded-2xl border border-orange-500/30 mb-12">
+                <h2 class="text-3xl font-bold mb-4">Need Help Fixing Your Landing Page?</h2>
+                <p class="text-gray-300 mb-6">I build landing pages that convert. Modern design, SEO-optimized, deployed in 24 hours.</p>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="../index.html#services" class="px-6 py-3 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg font-semibold text-center hover:shadow-lg hover:shadow-orange-500/50 transition-all duration-300">
+                        View Services
+                    </a>
+                    <a href="mailto:falesystems@proton.me" class="px-6 py-3 border-2 border-orange-500 rounded-lg font-semibold text-center hover:bg-orange-500/10 transition-all duration-300">
+                        Get in Touch
+                    </a>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Share -->
+        <div class="border-t border-gray-800 pt-8 mt-12">
+            <p class="text-gray-400 mb-4">Found this helpful? Share it:</p>
+            <div class="flex gap-4">
+                <a href="https://twitter.com/intent/tweet?text=5%20Landing%20Page%20Mistakes%20Killing%20Your%20Conversions&url=https://falesystems-lab.github.io/falesystems-portfolio/blog/landing-page-mistakes.html" target="_blank" class="text-gray-400 hover:text-orange-500 transition-colors">
+                    Twitter
+                </a>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://falesystems-lab.github.io/falesystems-portfolio/blog/landing-page-mistakes.html" target="_blank" class="text-gray-400 hover:text-orange-500 transition-colors">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+
+    </article>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 mt-20">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="../index.html" class="flex items-center space-x-2">
+                        <span class="text-3xl">🔥</span>
+                        <span class="font-bold">FaleSystems</span>
+                    </a>
+                </div>
+                <div class="flex gap-6">
+                    <a href="../index.html#services" class="text-gray-400 hover:text-orange-500 transition-colors">Services</a>
+                    <a href="../index.html#contact" class="text-gray-400 hover:text-orange-500 transition-colors">Contact</a>
+                    <a href="https://github.com/falesystems-lab" target="_blank" class="text-gray-400 hover:text-orange-500 transition-colors">GitHub</a>
+                </div>
+            </div>
+            <div class="text-center text-gray-500 text-sm mt-6">
+                © 2026 FaleSystems. Built with 🔥 and AI.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
