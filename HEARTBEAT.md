@@ -32,13 +32,15 @@
 
 3. **Content Marketing** (1 piece per day)
    - [x] Blog post: "Landing Page Mistakes" ✅ (11.7k words, MD + HTML)
-   - [ ] Twitter thread: "What makes landing pages convert"
+   - [x] Twitter threads: 4 complete threads ✅ (marketing/twitter-threads.md)
+   - [ ] Post Twitter threads (need account)
    - [ ] Blog post: "Discord Bot Ideas"
    - [ ] YouTube Short idea: "SEO tips"
 
 4. **Email List Setup**
-   - [ ] ConvertKit account (free tier)
-   - [ ] Lead magnet page: "5 Free Templates"
+   - [ ] ConvertKit account (free tier) - need to create
+   - [x] Lead magnet page: "5 Free Templates" ✅ (free-resources/index.html - 21kb)
+   - [ ] Embed ConvertKit form on lead magnet page
    - [ ] Embed signup on portfolio
 
 ---
